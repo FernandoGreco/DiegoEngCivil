@@ -1,0 +1,39 @@
+.fundo {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+  color: white;
+  background: url('img/fundo.jpg') no-repeat bottom center scroll;
+  background-position: 30% 45%;
+  background-size: cover;
+  position: relative;
+}
+
+.rosto{	
+	left:3%;
+	
+}
+
+.rosto,.nome{
+	position: absolute;
+	top:10%; 
+}
+.nav-top{
+	background-color: #0B0719;
+	position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+
+}
+
+.nav-fundo-branco{
+	background-color: white;
+}
+
+.nome{
+ color:#F2F2F2;
+ font-family: verdana;
+ margin-left: 14%;
+ font-size: 20px;
+}
