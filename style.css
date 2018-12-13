@@ -14,9 +14,16 @@
 	
 }
 
-.rosto,.nome{
+.rosto,.nome,.logo{
 	position: absolute;
 	top:10%; 
+}
+
+.descricao{
+  color: white;
+  top:30%;
+  left: 20%; 
+  position: absolute;
 }
 .nav-top{
 	background-color: #0B0719;
