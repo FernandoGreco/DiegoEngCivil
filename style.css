@@ -14,33 +14,78 @@
 	
 }
 
-.rosto,.nome,.logo{
+.rosto,.nome{
 	position: absolute;
 	top:10%; 
 }
 
+.nome{
+ color:#F2F2F2;
+ font-family: verdana;
+ margin-left: 16%;
+ font-size: 20px;
+}
+
+.logo{
+  left: 19%;
+  top:26%; 
+    position: absolute;
+}
+
 .descricao{
-  color: white;
-  top:30%;
-  left: 20%; 
+  padding: 5px;
+  color: black;
+  top:27%;
+  left: 38%; 
   position: absolute;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 2;
+ margin-right: 20%;
+ background-color: white;
 }
 .nav-top{
-	background-color: #0B0719;
+	background-color: white;
 	position: fixed;
     width: 100%;
     top: 0%;
     z-index: 1;
-
 }
 
 .nav-fundo-branco{
 	background-color: white;
 }
 
-.nome{
- color:#F2F2F2;
- font-family: verdana;
- margin-left: 14%;
- font-size: 20px;
+.fundoSobre,.fundoServicos{
+  padding: 40px;
+}
+.fundoServicos{
+  background-color: #E6E6E6;
+}
+
+.fundoSobre{
+  background-color: black;
+  color: gray;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 900px) {
+
+  
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 700px) {
+    .descricao{
+  top:55%;
+  left: 18%; 
+  font-size: 18px;
+}
+
+.rosto{ 
+  top:20%;
+  
+}
+  
 }

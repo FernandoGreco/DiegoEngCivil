@@ -14,77 +14,185 @@
 <body>
 
    <ul class="nav nav-top justify-content-center  ">
-  <li class="nav-item">
-    <a class="nav-link " href="#">Active</a>
+  <li class="nav">
+    <a class="nav-link " href="#duvidas">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Sobre</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Serviços</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
+    <a class="nav-link" href="#">Contato</a>
   </li>
 </ul>
 
  <div class="fundo"></div>
 
- <div class="nome">Diego Fernando Humaytá Dias </div>
+ <div class="nome"><h4>Diego Fernando Humaytá Dias</h4> <hr color='gray'> <font color="orange">Engenheiro Civil</font></div>
 
  <img src="img/diego.jpg" class="rosto rounded">
-
- <div class="container">
-
-<h2 class="descricao">Engenheiro Civil com experiência na análise e na produção documental junto aos órgãos públicos.
-Engenheiro Projetista de concreto armado e estruturas metálicas. 
-Desenvolvedor de sistemas de produtividade na área de projetos com ferramentas e blocos dinâmicos (CAD) e Revit.
-| BIM MANANGER |</h2>
-
 <img src="img/logo.png" width="70px" class="logo">
 
-<ul class="nav nav-tabs nav-fundo-branco" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+<div class="fundoSobre">
+ <div class="container-fluid">
+<h2>Sobre</h2>
+<hr>
+
+
+
+
+ </div>
+  </div>
+
+<div class="fundoServicos">
+
+ <div class="container-fluid">
+
+<h2>Serviços</h2>
+<hr>
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-contro>+</button>
+       <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         PREFEITURA
+        </button>  
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+● Alvará de aprovação e execução <hr>
+● Alvará de edificação nova, reforma e demolição <hr>
+● Licença para residências unifamiliares <hr>
+● Auto de regularização <hr>
+● Desdobro, desmembramentos e unificações de IPTU <hr>
+● Certificado de conclusão (Habite-se) <hr>
+● Certificado de conclusão de demolição <hr>
+● Certificado de quitação de ISS (Construção / Demolição / Reforma / Regularização) <hr>
+● Certificado de acessibilidade (Projeto / Diretrizes / Aprovação) <hr>
+● Auto de licença de funcionamento <hr>
+● Auto de licença de funcionamento condicionado <hr>
+● Alvará de funcionamento <hr>
+● Alvará de funcionamento de local de reunião 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-contro>+</button>
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          BOMBEIROS
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        ● Projetos e aprovações de combate ao incêndio <hr>
+        ● Obtenção de AVCB <hr>
+        ● F.A.T. - Formulário de Atendimento Técnico 
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading4">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-contro>+</button>
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+          LAUDOS
+        </button>
+      </h5>
+    </div>
+    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+      <div class="card-body">
+        ● Laudo de Estabilidade<hr>
+     ● Laudo Predial
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+    <div class="card-header" id="heading5">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-contro>+</button>
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+          ART – ANOTAÇÃO DE RESPOSABILIDADE TÉCNICA
+        </button>
+      </h5>
+    </div>
+    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+      <div class="card-body">
+        ● ART de Sistema de Combate à Incêndio
+    
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="card">
+    <div class="card-header" id="heading6">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-contro>+</button>
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+          ALVARÁ DE FUNCIONAMENTO
+        </button>
+      </h5>
+    </div>
+    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+      <div class="card-body">
+        ● Capital e Grande São Paulo<hr>
+● Licença Definitiva<hr>
+● Licença Temporária<hr>
+● Licença de Publicidade
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="card">
+    <div class="card-header" id="heading7">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-contro>+</button>
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+          PROJETO ARQUITETÔNICO E ACOMPANHAMENTO DE OBRA
+        </button>
+      </h5>
+    </div>
+    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+      <div class="card-body">
+      ● Estudo Preliminar<hr>
+● Anteprojeto<hr>
+● Projeto Executivo<hr>
+● Acompanhamento de Obra
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
 </div>
+</div>
+<div  id="duvidas"></div>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-<script>
-  function typeWriter(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    textoArray.forEach((letra, i) => {
-      setTimeout(() => elemento.innerHTML += letra, 75 * i);
-    });
-  }
+<div id="log" class="descricao"></div>
 
-  // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
-  // function typeWriter(elemento) {
-  //   const textoArray = elemento.innerHTML.split('');
-  //   elemento.innerHTML = '';
-  //   for(let i = 0; i < textoArray.length; i++) {
-  //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
-  //   }
-  // }
+<script src="myscripts.js"></script>
 
-  const titulo = document.querySelector('h2');
-  typeWriter(titulo);
-</script>
+
 </body>
 </html>
