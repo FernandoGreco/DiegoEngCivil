@@ -45,13 +45,21 @@
  background-color: white;
 }
 .nav-top{
-	background-color: white;
+	background-color: #6e6e6e;
 	position: fixed;
     width: 100%;
     top: 0%;
     z-index: 1;
+
 }
 
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover{
+color: black;
+}
 .nav-fundo-branco{
 	background-color: white;
 }
@@ -64,14 +72,28 @@
 }
 
 .fundoSobre{
-  background-color: black;
-  color: gray;
+  background-color: #6e6e6e;
+  color: #D8D8D8;
 }
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 900px) {
 
-  
+  .rosto{ 
+  top:29%;
+}
+
+.nome{
+ margin-left: 3%;
+ top:12%; 
+}
+
+.logo{
+  left: 50%;
+  top:30%; 
+
+}
+
 }
 
 
@@ -83,9 +105,6 @@
   font-size: 18px;
 }
 
-.rosto{ 
-  top:20%;
-  
-}
+
   
 }
