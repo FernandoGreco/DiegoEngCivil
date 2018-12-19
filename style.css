@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .fundo {
   width: 100%;
   height: 100vh;
@@ -171,4 +172,115 @@ ul, ol {
     opacity: 0;
     visibility: hidden;
     transition: .22s ease;
+=======
+.fundo {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+  color: white;
+  background: url('img/fundo.jpg') no-repeat bottom center scroll;
+  background-position: 30% 45%;
+  background-size: cover;
+  position: relative;
+}
+
+.rosto{	
+	left:3%;
+	
+}
+
+.rosto,.nome{
+	position: absolute;
+	top:10%; 
+}
+
+.nome{
+ color:#F2F2F2;
+ font-family: verdana;
+ margin-left: 16%;
+ font-size: 20px;
+}
+
+.logo{
+  left: 19%;
+  top:26%; 
+    position: absolute;
+}
+
+.descricao{
+  padding: 5px;
+  color: black;
+  top:27%;
+  left: 38%; 
+  position: absolute;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 2;
+ margin-right: 20%;
+ background-color: white;
+}
+.nav-top{
+	background-color: #6e6e6e;
+	position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+
+}
+
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover{
+color: black;
+}
+.nav-fundo-branco{
+	background-color: white;
+}
+
+.fundoSobre,.fundoServicos{
+  padding: 40px;
+}
+.fundoServicos{
+  background-color: #E6E6E6;
+}
+
+.fundoSobre{
+  background-color: #6e6e6e;
+  color: #D8D8D8;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 900px) {
+
+  .rosto{ 
+  top:29%;
+}
+
+.nome{
+ margin-left: 3%;
+ top:12%; 
+}
+
+.logo{
+  left: 50%;
+  top:30%; 
+
+}
+
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 700px) {
+    .descricao{
+  top:55%;
+  left: 18%; 
+  font-size: 18px;
+}
+
+
+  
+>>>>>>> 0d66f7422296f7307eb81d203d0c87c455a7657b
 }
