@@ -1,7 +1,7 @@
 
 
 var div = document.getElementById('log');
-var textos = ['Produção documental junto aos órgãos públicos', 'Projetista de concreto armado e estruturas metálicas', 'Projetos com ferramentas e blocos dinâmicos (CAD) e Revit. ','| BIM MANANGER |'];
+var textos = ['- Produção documental junto aos órgãos públicos', '-Projetista de concreto armado e estruturas metálicas', '-Projetos com ferramentas e blocos dinâmicos (CAD) e Revit. ','| BIM MANANGER |'];
 
 function escrever(str, done) {
     var char = str.split('').reverse();
@@ -29,15 +29,15 @@ function limpar(done) {
 
 function rodape(conteudos, el) {
     var atual = -1;
-	function prox(cb){
-		if (atual < conteudos.length - 1) atual++;
-		else atual = 0;
-		var str = conteudos[atual];
-		escrever(str, function(){
-			limpar(prox);
-		});
-	}
-	prox(prox);
+  function prox(cb){
+    if (atual < conteudos.length - 1) atual++;
+    else atual = 0;
+    var str = conteudos[atual];
+    escrever(str, function(){
+      limpar(prox);
+    });
+  }
+  prox(prox);
 }
 rodape(textos);
 
