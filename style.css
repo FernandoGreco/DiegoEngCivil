@@ -141,6 +141,11 @@ margin-right: 20px;
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 900px) {
 
+  .fundoSobre{
+   display: block;
+
+  }
+
   .rosto{ 
   top:29%;
   display: inline-block;
@@ -154,6 +159,11 @@ margin-right: 20px;
 
 .nm{
   font-size: 17px;
+}
+
+.servs{
+width: 100%;
+margin-bottom: 20px;
 }
 
 }
@@ -184,7 +194,7 @@ margin-right: 20px;
 .fundoSobre{
   padding: 0px 10px 0px 10px;
   margin: 0px;
-}
+  }
 
 .fundoServico{
   padding-left: 0px;
