@@ -1,6 +1,5 @@
 .rosto{
 z-index: 9;
-position: relative;
 float: left;
 padding-right:  20px;
 margin-left: 20px;
@@ -16,12 +15,52 @@ margin-left: 20px;
   position: absolute;
   margin-top: 12px;
   z-index: 1;
+  -webkit-animation-name: quadroFoto; 
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: quadroFoto;
+  animation-duration: 4s;
+
   }
 
-.nome{
+.nome,.rosto {
  color:#F2F2F2;
  font-family: verdana;
  font-size: 20px;
+ position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
+
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {left:-500px; top:0px;opacity: 0;  filter: alpha(opacity=0); }
+  100% {left:0px; top:0px; opacity: 1;  filter: alpha(opacity=1); }
+
+ 
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {left:-500px; top:0px;opacity: 0;  filter: alpha(opacity=0); }
+  100% {left:0px; top:0px;  opacity: 1;   filter: alpha(opacity=1); }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes quadroFoto {
+  0%   {opacity: 0;  filter: alpha(opacity=0); }
+  100% {opacity: 1;  filter: alpha(opacity=1); }
+
+ 
+}
+
+/* Standard syntax */
+@keyframes quadroFoto {
+  0%   {opacity: 0;  filter: alpha(opacity=0); }
+  100% {opacity: 1;   filter: alpha(opacity=1); }
 }
 
 
@@ -227,6 +266,10 @@ margin-bottom: 20px;
   padding: 15px;
   color: white;
 font-family: verdana;
+ -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
 
 }
 
