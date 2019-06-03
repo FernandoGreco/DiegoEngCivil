@@ -1,63 +1,73 @@
-<<<<<<< HEAD
-.fundo {
-  width: 100%;
-  height: 100vh;
-  padding: 100px 0;
-  color: white;
-  background: url('img/fundo.jpg') no-repeat bottom center scroll;
-  background-position: 30% 45%;
-  background-size: cover;
-  position: relative;
+.rosto{
+z-index: 9;
+position: relative;
+float: left;
+padding-right:  20px;
+margin-left: 20px;
 }
 
-.rosto{ 
-  left:3%;
-  
-}
 
-.rosto,.nome{
+.tres {
+ width:120px;
+ height:200px;
+ border-width: 2px;
+  border-style: solid;
+  border-color: yellow;
   position: absolute;
-  top:10%; 
-}
+  margin-top: 12px;
+  z-index: 1;
+  }
 
 .nome{
  color:#F2F2F2;
  font-family: verdana;
- margin-left: 16%;
  font-size: 20px;
 }
 
-.logo{
-  left: 19%;
-  top:26%; 
-    position: absolute;
+
+
+.EstHr{
+  color: yellow;
+  background-color: yellow;
+  height: 1px;
+  width: 363px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: absolute;
+  margin-top: -5px;
+  float: left;
 }
+
 
 .descricao{
   padding: 5px;
-  color: black;
-  top:27%;
-  left: 38%; 
-  position: absolute;
+  color: white; 
+  margin-top: 5%;
   font-family: verdana;
   font-size: 30px;
   font-weight: 2;
- margin-right: 20%;
- background-color: white;
+
 }
 .nav-top{
   background-color: #6e6e6e;
   position: fixed;
     width: 100%;
     top: 0%;
-    z-index: 1;
-
+    z-index: 55;
+       display: flex;
+    justify-content: space-around;
+    font-size: 20px;
 }
 
 .nav-link{
   color: white;
+     justify-content: space-between;
 }
 
+.card{
+  background-color: white;
+}
 .nav-link:hover{
 color: black;
 }
@@ -65,16 +75,31 @@ color: black;
   background-color: white;
 }
 
-.fundoSobre,.fundoServicos{
+.fundoSobre,.fundoInicio,.fundoPortifolio{
   padding: 40px;
 }
-.fundoServicos{
-  background-color: #E6E6E6;
+
+.fundoServico{
+  padding: 20px;
+   background-color: black;
+  color: white;
+}
+
+.fundoPortifolio{
+  background-color: #2E2E2E;
+  z-index: -1;
+  color: white;
 }
 
 .fundoSobre{
-  background-color: #6e6e6e;
-  color: #D8D8D8;
+  background-color: black;
+  color: white;
+}
+
+.fundoInicio{
+  background-color: black;
+  z-index: -2;
+  height: 400px;
 }
 
 .btn-link
@@ -84,203 +109,173 @@ color: black;
 
 .card{
   background-color: gray!important;
+  padding: 1px;
+  color: black!important;
 }
+
+.card-body{
+  color: white!important;
+}
+
+.some,.descricaoCel{
+  display: none;
+}
+
+.video{
+  float: left!important;
+}
+
+.servs{
+float: left; 
+margin-right: 20px;
+width: 50%;
+margin-bottom: 20px;
+}
+
+.pNome{
+  margin-top: 30px;
+}
+
+/*
+.fundoContato{
+
+  width: 550px;
+  position: absolute;
+  height: 120px;
+  background-color: #6e6e6e;
+   padding: 40px;
+   margin-bottom: -950px!important;
+}*/
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 900px) {
 
+
+.nav-top{
+  font-size: 15px;
+}
+
+.pNome{
+ margin-top: 0px;
+}
+
+  .fundoSobre{
+   display: block;
+
+  }
+
   .rosto{ 
   top:29%;
+  display: inline-block;
 }
 
-.nome{
- margin-left: 3%;
- top:12%; 
+
+.EstHr{
+  width: 300px;
 }
 
-.logo{
-  display: none;
-
-}
 
 .nm{
   font-size: 17px;
 }
 
+.servs{
+width: 100%;
+margin-bottom: 20px;
+}
+
 }
 
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 700px) {
-    .descricao{
-  top:37%;
-  left: 35%; 
-  font-size: 18px;
+
+.txtMenor{
+  font-size: 22px;
+  margin-top: 40px;
+}
+.btn.btn-link.collapsed{
+  font-size: 13px!important;
+ padding: 5px;
 }
 
-  
-}
+    .parceiros{
+      width: 100%;
+    }
+ .btn.btn-dark{
+  display: none;
+ }
 
-
-
-/*FOOTER*/
-
-.context-dark, .bg-gray-dark, .bg-primary {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
-    color: #ffffff;
-}
-.nav-list li {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.nav-list li a:hover:before {
-    margin-left: 0;
-    opacity: 1;
-    visibility: visible;
-}
-
-ul, ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.social-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 23px;
-    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
-}
-.social-container .col {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.nav-list li a:before {
-    content: "\f14f";
-    font: 400 21px/1 "Material Design Icons";
-    color: #4d6de6;
-    display: inline-block;
-    vertical-align: baseline;
-    margin-left: -28px;
-    margin-right: 7px;
-    opacity: 0;
-    visibility: hidden;
-    transition: .22s ease;
-=======
-.fundo {
-  width: 100%;
-  height: 100vh;
-  padding: 100px 0;
-  color: white;
-  background: url('img/fundo.jpg') no-repeat bottom center scroll;
-  background-position: 30% 45%;
-  background-size: cover;
-  position: relative;
-}
-
-.rosto{	
-	left:3%;
-	
-}
-
-.rosto,.nome{
-	position: absolute;
-	top:10%; 
-}
-
-.nome{
- color:#F2F2F2;
- font-family: verdana;
- margin-left: 16%;
- font-size: 20px;
-}
-
-.logo{
-  left: 19%;
-  top:26%; 
-    position: absolute;
-}
-
-.descricao{
-  padding: 5px;
-  color: black;
-  top:27%;
-  left: 38%; 
-  position: absolute;
-  font-family: verdana;
-  font-size: 30px;
-  font-weight: 2;
- margin-right: 20%;
- background-color: white;
-}
-.nav-top{
-	background-color: #6e6e6e;
-	position: fixed;
-    width: 100%;
-    top: 0%;
-    z-index: 1;
-
-}
-
-.nav-link{
-  color: white;
-}
-
-.nav-link:hover{
-color: black;
-}
-.nav-fundo-branco{
-	background-color: white;
-}
-
-.fundoSobre,.fundoServicos{
-  padding: 40px;
-}
-.fundoServicos{
-  background-color: #E6E6E6;
+  .fundoInicio,.fundoPortifolio{
+  padding: 10px 0px 10px 0px;
 }
 
 .fundoSobre{
-  background-color: #6e6e6e;
-  color: #D8D8D8;
+  padding: 0px 10px 0px 10px;
+  margin: 0px;
+  }
+
+.fundoServico{
+  padding-left: 0px;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 900px) {
+    .descricao{
+  font-size: 18px;
 
-  .rosto{ 
-  top:29%;
 }
 
 .nome{
- margin-left: 3%;
- top:12%; 
+   font-size: 15px;
 }
 
-.logo{
-  left: 50%;
-  top:30%; 
-
-}
-
-}
-
-
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 700px) {
-    .descricao{
-  top:55%;
-  left: 18%; 
+.pNome{
   font-size: 18px;
-}
-
-
   
->>>>>>> 0d66f7422296f7307eb81d203d0c87c455a7657b
 }
+.aparece{
+  display: none;
+}  
+
+.descricaoCel,.some{
+  display: inline-block;
+}
+
+.descricaoCel{
+  padding: 15px;
+  color: white;
+font-family: verdana;
+
+}
+
+.some{
+    
+   margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+   
+}
+
+.fundoInicio{
+  width: 100%;
+  padding-top: 38px;
+  padding-left: 10px; 
+  height: 25%;
+}
+
+.rosto{
+  margin-left: 20%;
+  float: none;
+}
+.tres {
+margin-left: 12%;
+  }
+
+  .descricao{
+
+  display: none;
+
+}
+
+}
+
+
+
