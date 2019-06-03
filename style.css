@@ -1,5 +1,6 @@
 .rosto{
 z-index: 9;
+position: relative;
 float: left;
 padding-right:  20px;
 margin-left: 20px;
@@ -15,52 +16,12 @@ margin-left: 20px;
   position: absolute;
   margin-top: 12px;
   z-index: 1;
-  -webkit-animation-name: quadroFoto; 
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: quadroFoto;
-  animation-duration: 4s;
-
   }
 
-.nome,.rosto {
+.nome{
  color:#F2F2F2;
  font-family: verdana;
  font-size: 20px;
- position: relative;
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  animation-duration: 2s;
-
-}
-
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-  0%   {left:-500px; top:0px;opacity: 0;  filter: alpha(opacity=0); }
-  100% {left:0px; top:0px; opacity: 1;  filter: alpha(opacity=1); }
-
- 
-}
-
-/* Standard syntax */
-@keyframes example {
-  0%   {left:-500px; top:0px;opacity: 0;  filter: alpha(opacity=0); }
-  100% {left:0px; top:0px;  opacity: 1;   filter: alpha(opacity=1); }
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes quadroFoto {
-  0%   {opacity: 0;  filter: alpha(opacity=0); }
-  100% {opacity: 1;  filter: alpha(opacity=1); }
-
- 
-}
-
-/* Standard syntax */
-@keyframes quadroFoto {
-  0%   {opacity: 0;  filter: alpha(opacity=0); }
-  100% {opacity: 1;   filter: alpha(opacity=1); }
 }
 
 
@@ -94,11 +55,14 @@ margin-left: 20px;
     width: 100%;
     top: 0%;
     z-index: 55;
-
+       display: flex;
+    justify-content: space-around;
+    font-size: 20px;
 }
 
 .nav-link{
   color: white;
+     justify-content: space-between;
 }
 
 .card{
@@ -168,6 +132,9 @@ width: 50%;
 margin-bottom: 20px;
 }
 
+.pNome{
+  margin-top: 30px;
+}
 
 /*
 .fundoContato{
@@ -181,6 +148,15 @@ margin-bottom: 20px;
 }*/
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 900px) {
+
+
+.nav-top{
+  font-size: 15px;
+}
+
+.pNome{
+ margin-top: 0px;
+}
 
   .fundoSobre{
    display: block;
@@ -215,6 +191,7 @@ margin-bottom: 20px;
 
 .txtMenor{
   font-size: 22px;
+  margin-top: 40px;
 }
 .btn.btn-link.collapsed{
   font-size: 13px!important;
@@ -266,10 +243,6 @@ margin-bottom: 20px;
   padding: 15px;
   color: white;
 font-family: verdana;
- -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  animation-duration: 4s;
 
 }
 
