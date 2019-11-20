@@ -1,3 +1,204 @@
-/* define variables for the primary colors */
-body {
-  background-color: #a2b9bc; }
+.rosto {
+  z-index: 9;
+  position: relative;
+  float: left;
+  padding-right: 20px;
+  margin-left: 20px; }
+
+.tres {
+  width: 120px;
+  height: 200px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: yellow;
+  position: absolute;
+  margin-top: 12px;
+  z-index: 1; }
+
+.nome {
+  color: #F2F2F2;
+  font-family: verdana;
+  font-size: 20px; }
+
+.EstHr {
+  color: yellow;
+  background-color: yellow;
+  height: 1px;
+  width: 363px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: absolute;
+  margin-top: -5px;
+  float: left; }
+
+.descricao {
+  padding: 5px;
+  color: white;
+  margin-top: 5%;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 2; }
+
+.nav-top {
+  background-color: #6e6e6e;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 55;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px; }
+
+.nav-link {
+  color: white;
+  justify-content: space-between; }
+
+.card {
+  background-color: white; }
+
+.nav-link:hover {
+  color: black; }
+
+.nav-fundo-branco {
+  background-color: white; }
+
+.fundoSobre, .fundoInicio, .fundoPortifolio {
+  padding: 40px; }
+
+.fundoSobre, .fundoInicio, .fundoServico {
+  background-color: black; }
+
+.fundoServico {
+  padding: 20px;
+  color: white; }
+
+.fundoPortifolio {
+  background-color: #2E2E2E;
+  z-index: -1;
+  color: white; }
+
+.fundoSobre {
+  color: white; }
+
+.fundoInicio {
+  z-index: -2;
+  height: 400px; }
+
+.btn-link {
+  color: white !important; }
+
+.card {
+  background-color: gray !important;
+  padding: 1px;
+  color: black !important; }
+
+.card-body {
+  color: white !important; }
+
+.some, .descricaoCel {
+  display: none; }
+
+.video {
+  float: left !important; }
+
+.servs {
+  float: left;
+  margin-right: 20px;
+  width: 50%;
+  margin-bottom: 20px; }
+
+.pNome {
+  margin-top: 30px; }
+
+.descricao::after {
+  color: white;
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite; }
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+/*
+.fundoContato{
+
+  width: 550px;
+  position: absolute;
+  height: 120px;
+  background-color: #6e6e6e;
+   padding: 40px;
+   margin-bottom: -950px!important;
+}*/
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 900px) {
+  .nav-top {
+    font-size: 15px; }
+  .pNome {
+    margin-top: 0px; }
+  .fundoSobre {
+    display: block; }
+  .rosto {
+    top: 29%;
+    display: inline-block; }
+  .EstHr {
+    width: 300px; }
+  .nm {
+    font-size: 17px; }
+  .servs {
+    width: 100%;
+    margin-bottom: 20px; } }
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 700px) {
+  .txtMenor {
+    font-size: 22px;
+    margin-top: 40px; }
+  .btn.btn-link.collapsed {
+    font-size: 13px !important;
+    padding: 5px; }
+  .parceiros {
+    width: 100%; }
+  .btn.btn-dark {
+    display: none; }
+  .fundoInicio, .fundoPortifolio {
+    padding: 10px 0px 10px 0px; }
+  .fundoSobre {
+    padding: 0px 10px 0px 10px;
+    margin: 0px; }
+  .fundoServico {
+    padding-left: 0px; }
+  .descricao {
+    font-size: 18px; }
+  .nome {
+    font-size: 15px; }
+  .pNome {
+    font-size: 18px; }
+  .aparece {
+    display: none; }
+  .descricaoCel, .some {
+    display: inline-block; }
+  .descricaoCel {
+    padding: 15px;
+    color: white;
+    font-family: verdana; }
+  .some {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  .fundoInicio {
+    width: 100%;
+    padding-top: 38px;
+    padding-left: 10px;
+    height: 25%; }
+  .rosto {
+    margin-left: 20%;
+    float: none; }
+  .tres {
+    margin-left: 12%; }
+  .descricao {
+    display: none; } }
